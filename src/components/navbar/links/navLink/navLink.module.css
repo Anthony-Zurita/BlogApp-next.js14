@@ -1,0 +1,20 @@
+/*
+    container: This is the main container for the NavLink component, styling each navlink
+    -- min-width: 100px: This sets the minimum width of the container to 100px.
+    -- padding: 10px: This adds padding of 10px to the container.
+    -- border-radius: 20px: This adds a border radius of 20px to the container.
+    -- font-weight: 500: This sets the font weight of the text in the container to 500.
+    -- text-align: center: This aligns the text in the container to the center.
+*/
+.container{
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.active{
+    background-color: var(--text);
+    color: var(--bg);
+}

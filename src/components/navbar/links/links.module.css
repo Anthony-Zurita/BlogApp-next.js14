@@ -1,0 +1,82 @@
+/*
+    links will be the container for the links in the navbar
+    -- display flex to make the container a flex container
+    -- align-items center to align the items in the center of the container, vertically
+    -- gap 10px to add a gap of 10px between the items in the container
+*/
+.links{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*
+    logout will be the container for the logout button
+    -- padding 10px to add padding of 10px to the container
+    -- cursor pointer to change the cursor to a pointer when hovering over the container
+    -- font-weight bold to set the font weight of the text in the container to bold
+*/
+.logout{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*
+    mobileLinks will be the container for the links in the navbar when in mobile view
+    menuButton will be the container for the menu button in the navbar when in mobile view
+    -- display none to hide the mobileLinks and menuButton when not in mobile view
+
+*/
+.menuButton, 
+.mobileLinks{
+    display: none;
+}
+
+@media (max-width: 768px){
+/*
+    links will be the container for the links in the navbar when in mobile view
+    -- display none to hide the container and nav bar when in mobile view
+*/
+
+    .links{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+        cursor: pointer;
+    }
+
+/*
+    mobileLinks will be the container for the links in the navbar when in mobile view
+    -- position absolute to position the container absolutely in the viewport
+    -- top 100px to position the container 100px from the top of the viewport
+    -- left 0 to position the container 0px from the left of the viewport
+    -- width 100% to set the width of the container to 100% of the viewport
+    -- height 0 to set the height of the container to 0
+    -- background-color var(--bg) to set the background color of the container to the value of the --bg variable
+    -- display flex to make the container a flex container
+    -- flex-direction column to stack the items in the container vertically
+    -- align-items center to align the items in the center of the container, horizontally
+    -- justify-content center to align the items in the center of the container, vertically
+    -- gap 10px to add a gap of 10px between the items in the container
+    -- overflow hidden to hide any content that overflows the container
+    -- transition height 0.5s ease-in-out to add a transition effect to the height property of the container
+
+*/
+
+    .mobileLinks{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        height: calc(100vh - 100px);
+        background-color: rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

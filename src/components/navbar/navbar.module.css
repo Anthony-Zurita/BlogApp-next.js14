@@ -1,0 +1,25 @@
+
+/*
+     container: This class is used to style the container of the navbar.
+     -- height: 100px: This sets the height of the container to 100px.
+     -- display: flex: This sets the display property of the container to flex. Helps align the items all in one line
+     -- align-items: center: This aligns the items in the center of the container, vertically.
+
+     
+*/
+.container{
+     height: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+/*
+     logo: This class is used to style the logo of the navbar.
+     -- font-size: 30px: This sets the font size of the logo to 30px.
+     -- font-weight: bold: This sets the font weight of the logo to bold.
+*/
+.logo{
+     font-size: 30px;
+     font-weight: bold;
+}

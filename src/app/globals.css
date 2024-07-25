@@ -1,0 +1,115 @@
+/*
+    root 
+     -- sets the value of the variable bg to #0d0c22
+     -- sets the value of the variable bgSoft to #2d2b42
+     -- sets the value of the variable text to white
+     -- sets the value of the variable textSoft to #e5e5e5
+     -- sets the value of the variable btn to #3673fd
+
+*/
+:root{
+    --bg: #0d0c22;
+    --bgSoft: #2d2b42;
+    --text: white;
+    --textSoft: #e5e5e5;
+    --btn: #3673fd;
+}
+
+/*
+    * (universal selector)
+     -- removes the margin, border, and padding from all elements
+     -- makes sure that the box-sizing is border-box
+*/
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*
+    Body
+     -- makes the background color black
+     -- makes the text color white
+*/
+body{
+    background-color: var(--bg);
+    color:var(--text);
+}
+
+/*
+    a
+     -- removes the underline and default styling from the anchor tag/nav links
+     -- changes the color of the text to white by inheriting the color from the parent element, body
+*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*
+    container will be the mian container and will be resized to make the website responsive
+    .container (main container to arrange and layout the content of each page)
+     -- sets the width to 1536px
+     -- margin auto centers the container
+     -- padding left adds padding to the left side of the container
+     -- padding right adds padding to the right side of the container
+     -- min-height sets the minimum height of the container to 100vh to it takes up the full height of the viewport
+
+     need to have navbar at the top, footer at the bottom, and content in btwn to seperate them ...
+     -- display flex to make the container a flex container
+     -- flex-direction column to stack the elements vertically in column and so they do not go horizontally
+     -- justify-content space-between to push the navbar to the top and the footer to the bottom of the container and the 
+        content in the middle
+
+*/
+.container{
+    width: 1536px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*
+    Common CSS Break points to adjust the size of the container to fit the screen as it shrinks down
+*/
+@media (max-width: 1536px){
+    .container{
+        width: 1366px;
+    }
+}
+
+@media (max-width: 1366px){
+    .container{
+        width: 1280px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container{
+        width: 1024px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 640px;
+    }
+}
+
+@media (max-width: 640px){
+    .container{
+        width: 475px;
+    }
+}
