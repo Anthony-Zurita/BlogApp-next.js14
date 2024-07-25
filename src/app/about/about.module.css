@@ -1,0 +1,10 @@
+
+/*
+    position should be relative since fill has a parent div
+*/
+.imgContainer{
+
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
