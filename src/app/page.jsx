@@ -19,7 +19,7 @@ const Home = () => {
           <Image src="/brands.png" alt="" fill className={styles.brandsImg} />
         </div>
       </div>
-      <div className={styles.imageContainer}>
+      <div className={styles.imgContainer}>
         <Image src="/hero.gif" alt="" fill className={styles.heroImg} />
       </div>
     </div>

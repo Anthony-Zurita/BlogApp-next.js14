@@ -1,4 +1,48 @@
+
+/*
+    Container is a className for the home page to help layout everything
+     -- display: flex; makes the children of the container flex items
+     -- gap: 100px; adds a 100px gap between each child of the container, i.e. the textContainer and the imageContainer
+*/
 .container{
     display: flex;
     gap: 100px;
+}
+
+
+/*
+    textContainer is a className for the home page to help put a container around the text
+     -- flex: 1; allows the textContainer to take up the remaining space in the container
+*/
+.textContainer{
+    flex: 1;
+
+}
+
+/*
+    brands is a className for the home page to help put a container around the brands images
+     -- width: 500px; sets the width of the brands container to 500px
+     -- height: 500px; sets the height of the brands container to 500px
+     -- position: relative; allows the brands images/child elements inside the container to be positioned relative to the brands container
+     -- filter: grayscale(1); applies a grayscale filter to the brand images
+*/
+.brands{
+    width: 500px;
+    height: 50px;
+    position: relative;
+    filter: grayscale(1);
+}
+
+
+/*
+    imageContainer is a className for the home page to help put a container around the image
+     -- position: relative; allows the image to be positioned relative to the imageContainer
+        position relative also used because image component has fill making them go hand in hand.
+        Fill makes the image take up the full width and height of the parent container, and its position is relative to the parent 
+        container. Allowing the image to scale within the parent container.
+     -- flex: 1; allows the imageContainer to take up the remaining space in the container
+*/
+.imgContainer{
+    flex: 1;
+    position: relative;
 }
